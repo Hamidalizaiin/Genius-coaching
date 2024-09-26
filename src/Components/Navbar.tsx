@@ -23,11 +23,12 @@ const Navbar = () => {
                 </ul>
                 <MdMenu size={32} onClick={toggleSidebar} className='block sm:hidden' />
             </nav>
+
             <div
-                className={`fixed flex top-0 left-0 h-full w-full   text-white transform ${isOpen ? 'translate-x-0' : '-translate-x-full'
+                className={`fixed flex top-0 z-10 left-0 h-full w-full   text-white transform ${isOpen ? 'translate-x-0' : '-translate-x-full'
                     } transition-transform duration-300 ease-in-out sm:hidden`} onClick={(e) => e.stopPropagation()}>
                 <div className="w-3/4 py-4 px-5 bg-black flex flex-col ">
-                    <h1 className='font-bold text-2xl text-neutral-100 mt-12'>Genius Coaching</h1>
+                    <h1 className='font-bold text-2xl text-neutral-100 mt-12 poppinFonts'>Genius Coaching</h1>
                     <div className='list-none flex flex-col gap-2 mt-12'>
                         <Link className='small-nav-li' to={'/'} onClick={toggleSidebar}><li>Home</li></Link>
                         <Link className='small-nav-li' to={'/about'} onClick={toggleSidebar}><li>About</li></Link>

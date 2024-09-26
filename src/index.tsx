@@ -24,10 +24,19 @@ const routes: RouteObject[] = [
         path: "about",
         element: <div>About</div>,
       },
-      // {
-      //   path: "about",
-      //   element: <About />,  // Uncomment if About component is added
-      // },
+      {
+        path: "courses",
+        element: <div>courses</div>,
+      }, 
+      {
+        path: "careers",
+        element: <div>careers</div>,
+      },
+      {
+        path: "fee-vouchers",
+        element: <div>fee vouchers</div>,
+      },
+     
     ],
   }
 ];
@@ -49,4 +58,4 @@ if (rootElement) {
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals(console.log);  // Keep this if you're logging or sending to analytics
+reportWebVitals(() => <></>);  // Keep this if you're logging or sending to analytics
