@@ -6,7 +6,7 @@ import { FaPen, FaEraser } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <section className="h-[600px] flex flex-col justify-center items-center px-6 sm:px-12 xl:px-0 md:justify-between md:flex-row relative">
+    <section className="h-screen flex flex-col justify-center items-center  md:justify-between md:flex-row relative">
       <div className="flex flex-col gap-2 sm:gap-4 justify-center text-center md:text-left">
         <h1 className="max-w-full text-xl sm:text-3xl md:max-w-xl poppinFonts">Empower Your Future with Genius_Coaching</h1>
         <p className="max-w-full md:max-w-md">
