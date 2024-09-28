@@ -10,7 +10,7 @@ const FAQS = () => {
         {
             id: 0,
             ques: "What are the Coaching operating hours?",
-            ans: "Our school operates from Monday to Friday, 8:00 AM to 3:30 PM. ",
+            ans: "Our school operates from Monday to Saturday, 2:00 PM to 8:30 PM. ",
             link: "",
             linkText:""
         },
