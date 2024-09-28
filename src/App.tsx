@@ -1,14 +1,19 @@
 import React from 'react';
 import './App.css';
 import HeroSection from './Sections/HeroSection';
+import KeyPoints from './Sections/KeyPoints';
+import FAQS from './Sections/FAQS';
+import AboutUs from './Sections/AboutUs';
 
 function App() {
   return (
-    <main className='container max-w-7xl mx-auto '>
+     <>
       <HeroSection />
-
-    </main>
-  );
+      <KeyPoints />
+      <AboutUs />
+      <FAQS />
+    </>
+   );
 }
 
 export default App;
