@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css'; 
+import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
@@ -10,6 +10,8 @@ import {
   RouteObject,
 } from "react-router-dom";
 import Layout from './Components/Layout';
+import Courses from './courses/Courses';
+import CoursesForms from './courses/Components/CoursesForms';
 
 const routes: RouteObject[] = [
   {
@@ -21,13 +23,13 @@ const routes: RouteObject[] = [
         element: <App />,
       },
       {
-        path: "about",
-        element: <div>About</div>,
+        path: "courses",
+        element: <Courses />,
       },
       {
-        path: "courses",
-        element: <div>courses</div>,
-      }, 
+        path: "courses/:id",
+        element: <CoursesForms />,
+      },
       {
         path: "careers",
         element: <div>careers</div>,
@@ -36,7 +38,7 @@ const routes: RouteObject[] = [
         path: "fee-vouchers",
         element: <div>fee vouchers</div>,
       },
-     
+
     ],
   }
 ];

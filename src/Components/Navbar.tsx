@@ -16,9 +16,8 @@ const Navbar = () => {
 
                 <ul className='hidden items-center  justify-center gap-4 sm:flex'>
                     <Link to={'/'} ><li>Home</li></Link>
-                    <Link to={'/about'} ><li>About</li></Link>
-                    <Link to={'/'} ><li>Courses</li></Link>
-                    <Link to={'/'} ><li>Careers</li></Link>
+                    <Link to={'/courses'} ><li>Courses</li></Link>
+                    <Link to={'/careers'} ><li>Careers</li></Link>
                     <Link to={'/'} ><button className='bg-black py-2 px-4 rounded-md text-white border-2 hover:border-black hover:bg-white hover:text-black'>Fee Vouchers</button></Link>
                 </ul>
                 <MdMenu size={32} onClick={toggleSidebar} className='block sm:hidden' />
